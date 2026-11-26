@@ -1,0 +1,102 @@
+{
+  "_version": "1.76.0",
+  "sap.app": {
+    "id": "com.mentorship.dascalendar.dascalendar",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.20.0",
+      "toolsId": "09c248ba-97e2-4987-b4c1-7e781c363397"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.154.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.mentorship.dascalendar.dascalendar.i18n.i18n"
+        }
+      },
+      "Calendar": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/mockdata/DAS-mockdata.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "com.mentorship.dascalendar.dascalendar.view",
+        "async": true,
+        "viewPath": "com.mentorship.dascalendar.dascalendar.view"
+      },
+      "routes": [
+        {
+          "name": "RouteCalendar",
+          "pattern": ":?query:",
+          "target": [
+            "TargetCalendar"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetCalendar": {
+          "id": "Calendar",
+          "name": "Calendar"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "com.mentorship.dascalendar.dascalendar.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

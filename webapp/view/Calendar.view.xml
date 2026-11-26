@@ -1,0 +1,33 @@
+<mvc:View controllerName="com.mentorship.dascalendar.dascalendar.controller.Calendar"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="idcalendarPage" title="Dock Appointment Scheduling">
+        <content>
+
+            <!-- Loading Group Count and Status Legend -->
+            <HBox id="idCalendarLegend" alignItems="Center" justifyContent="Start" class="calendarLegend">
+
+                <!-- Dynamic Loading Group Count -->
+                <Text text="{Frontend>/loadingGroupText}" class="loadingGroupCount" />
+
+                <!-- Status Legend -->
+                <Text text="Available" class="legendAvailable" />
+
+                <Text text="Unavailable" class="legendUnavailable" />
+
+                <Text text="Reserved for Carrier" class="legendReserved" />
+
+                <Text text="Blocked" class="legendBlocked" />
+
+            </HBox>
+
+            <!-- Calendar Table -->
+            <Table id="idcalendarTable" width="100%" fixedLayout="false">
+                <!-- Columns and rows are created dynamically in the controller -->
+
+
+            </Table>
+
+        </content>
+    </Page>
+</mvc:View>

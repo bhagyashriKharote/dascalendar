@@ -1,0 +1,24 @@
+{
+  "generationParameters": {
+    "generationDate": "Tue Nov 24 2026 13:30:10 GMT+0530 (India Standard Time)",
+    "generatorPlatform": "Visual Studio Code",
+    "serviceType": "None",
+    "metadataFilename": "",
+    "serviceUrl": "N/A",
+    "appName": "das-calendar",
+    "appTitle": "Dock Appointment Scheduling Assignment 1",
+    "appDescription": "SAPUI5 application for Dock Appointment Scheduling master data calendar view.",
+    "appNamespace": "com.mentorship.dascalendar",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.154.0",
+    "enableCodeAssist": false,
+    "enableEslint": false,
+    "enableTypeScript": false,
+    "showMockDataInfo": false,
+    "generatorVersion": "1.20.0",
+    "template": "Basic",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}
